@@ -39,6 +39,7 @@ def get_structured_completion(
     Returns:
         Parsed response model.
     """
+    
     # Read deployment name from environment when not provided; do not fallback to a hardcoded name
     model = model or os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT")
 
